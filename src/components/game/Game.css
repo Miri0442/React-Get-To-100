@@ -1,0 +1,105 @@
+.game {
+    height: 350px;
+    border: 2px solid #db9fb3;
+    border-radius: 10px; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    max-width: 350px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 15px; 
+}
+
+.game h2 {
+    color:  #df7f9f;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold; 
+    border: #111010;
+}
+.game p {
+    margin:0;
+    font-size: 16px;
+    color: #333;
+}
+
+.gameBtn {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 15px;
+}
+
+.gameBtn button {
+    width: 45%; 
+    padding: 10px;
+    font-size: 14px;
+    background-color:  #db9fb3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.gameBtn button:hover {
+    background-color: #db9fb3;
+    transform: translateY(-3px); 
+}
+
+.winBtn {
+    height: 350px;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: none; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: 2px solid  #e484a4;
+    border-radius: 10px;
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    z-index: 10; 
+}
+
+.winBtn.showOptions {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px;
+    width: 81%; 
+    height: 350px;
+    max-width: 350px; 
+    background-color: #f8beda;
+}
+
+.winBtn button {
+    width: 100%; 
+    padding: 10px;
+    font-size: 14px;
+    background-color: #ca7894;
+    color: #111010;
+    border: none;
+    border-radius: 5px ;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 30px;
+    font-size: 16px;
+}
+.winBtn h2{
+    color: black;
+    margin: 10px;
+}
+
+.playing{
+    display: none;
+}
+.winnerDisplay{
+    display: inline;
+} 

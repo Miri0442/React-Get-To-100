@@ -1,0 +1,77 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.loggedPlayers {
+  position: absolute;
+  left: 60px;
+  top: 90px;
+  padding: 20px;
+  border-radius: 5px;
+  height: 60%;
+  width: 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.loggedPlayers ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  left: 20px;
+}
+
+.loggedPlayers li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  left: 20px;
+  font-size: 20px;
+}
+
+.loggedPlayers li::before {
+  margin-right: 10px;
+  color: black;
+  font-size: 16px;
+}
+
+.homeBtn button {
+  border: 3px solid rgb(199, 176, 180);
+  font-size: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.homeBtn button:hover {
+  background-color: rgb(231, 206, 210);
+  color: rgb(31, 29, 29);
+}
+
+.notification {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 3px solid rgb(38, 35, 36);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loggedPlayers::-webkit-scrollbar {
+  display: none;
+}

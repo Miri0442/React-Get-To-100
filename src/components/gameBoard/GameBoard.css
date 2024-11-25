@@ -1,0 +1,81 @@
+.gamesDisplay {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-height: 70vh;
+    margin-right: 0;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.game-board h1 {
+    font-size: 5vw;
+    font-family: 'Rock Salt', cursive;
+    transform: translateY(-5vw);
+}
+
+.h2 {
+    font-family: 'Rock Salt', cursive;
+}
+
+.creatingGame,
+.newPlayer {
+    margin: 10px;
+    width: 20vw;
+
+}
+
+.gamesDisplay .game.active {
+    margin: 10px;
+    background-color: rgb(242, 213, 227);
+}
+
+.gamesDisplay::-webkit-scrollbar {
+    display: none;
+}
+
+.gamesDisplay .game.inactive {
+    margin: 10px;
+    opacity: 0.7;
+}
+
+.header {
+    font-family: 'Rock Salt', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    transform: translateY(-40px);
+}
+
+.icon {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    color: #333;
+    display: inline-block;
+    position: relative;
+
+}
+
+.icon::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    background-color: black;
+    transform: rotate(-10deg);
+}
+
+.icon::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    background-color: black;
+    transform: rotate(-10deg);
+}
